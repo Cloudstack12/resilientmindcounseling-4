@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Global Styles */
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px 0%;
+  background: #2ea3f2;
+  font-size: large;
+  bottom: 30px;
+  
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a.new:hover{
+    color:red;
+}
+
+/* Container Styles */
+.container {
+  display: flex;
+  height: 89vh;
+}
+.main-wrapper{
+  flex: 2;
+  overflow-y: scroll;
+}
+.side-bar{
+  background: #faf9f9;
+  flex: .3;
+  padding: 40px;
+  text-align: center;
+  /* background-color: white; */
+}
+
+.side-bar ul{
+  padding: 0 40px;
+  list-style: none;
+  text-align: center;
+}
+
+.side-bar{
+  background: rgb(230, 230, 231);
+}
+
+
+@media only screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .side-bar{
+    background: #114;
+    color: white !important;
+  }
+  .side-bar a{
+    color: white !important;
+  }
+}
+
+
+
+/* Navigation Menu Styles */
+
+nav.nav-menu {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+nav.nav-menu ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: clamp(.8rem, 1.2vw, 2rem); 
+}
+
+.nav-menu .nav-item {
+  padding: 15px;
+  transition: background-color 500ms ease-in-out;
+}
+
+.nav-menu .nav-item:hover {
+  cursor: pointer;
+  background-color: #f5f5f54d;
+}
+
+.nav-menu .nav-item a{
+  text-decoration: none;
+  color: black;
+}
+
+
+/* Main Content Wrapper Styles */
+.main-wrapper {
+  background: white;
+  padding: 40px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+section.head,
+section.youtube-embed {
+  text-align: center;
+}
+
+.button-link {
+  display: block;
+  margin: 20px 0 0 0;
+  padding: 10px 25px;
+  width: fit-content;
+  background: #f4ca14;
+  border-width: 0px!important;
+  border-color: rgba(0,0,0,0);
+  border-radius: 0px;
+  text-decoration: none;
+  color: rgba(0,0,0,0.89)!important;
+  transition: 0.3s transform ease-in-out;
+  text-align: center;
+  font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif!important;
+    font-weight: 600!important;
+    background-image: linear-gradient(360deg,#f4ca14 100%,#f79400 100%);
+    background-color: #f4ca14;
+}
+
+
+.button-link:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: #f4ca14;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  margin-bottom: 50px;
+
+}
+
+ul{
+  padding-left: 30px;
+  }
+  
+  .side ul{
+    text-align: justify;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    font-family: "Cormorant SC", sans-serif;
+    font-size:large
+
+  }
+
+  ol{
+    padding-left: 40px;
+    }
+    
+    .side ol{
+      text-align: justify;
+      margin-bottom: 10px;
+      line-height: 1.5rem;
+      font-family: "Cormorant SC", sans-serif;
+      font-size:large
+  
+    }
+
+p {
+  text-align: justify;
+  margin-bottom: 10px;
+  line-height: 1.5rem;
+  font-size: large;
+}
+
+img {
+  max-width: 100%;
+  float: left;
+  border: 3px solid white;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.two-col {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.two-col div {
+  width: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    padding: 0;
+  }
+
+  .two-col {
+    flex-direction: column;
+  }
+
+  .two-col div {
+    width: 100%;
+  }
+
+  .main-wrapper {
+    padding: 5%;
+  }
+}
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: url("https://i0.wp.com/resilientmindcounseling.com/wp-content/uploads/2023/04/Mental-Health-Crisis-Worldwide.jpg?resize=1000%2C664&ssl=1");
+    /* Set a specific height */
+    height: 400px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 0%;
+  }
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: left;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    transform: translate(-30%, -30%);
+    color: #ffffff(255, 255, 255);
+    font-weight: normal;
+    font-size: 14px;
+    width: 100%;
+    padding: 20px;
+  }
